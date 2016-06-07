@@ -1,2 +1,2 @@
 # post-load-plugins
-> Automatically creates a config for plug-ins and to process
+> Automatically creates a config for plug-ins
