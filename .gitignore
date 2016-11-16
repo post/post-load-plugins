@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+._*
+
+# NODEJS
+node_modules
+npm-debug.log
+lib/
+coverage/
+# Sublime
+*.sublime*
+
+# Nyc
+.nyc_output/
