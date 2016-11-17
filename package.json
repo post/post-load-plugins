@@ -50,7 +50,7 @@
     "chalk": "^1.1.3",
     "indent-string": "^3.0.0",
     "log-symbols": "^1.0.2",
-    "post-config": "0.0.1",
+    "post-config": "0.0.2",
     "post-sequence": "^0.1.0",
     "text-table": "^0.2.0"
   },
