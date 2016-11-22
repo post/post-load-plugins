@@ -18,21 +18,21 @@ test('Plugin return array', t => {
 
 test('Plugin reads custom json config from posthtml.json', async t => {
 	t.is(
-		(await read('expected/output-config-pkg.html')),
-		(await posthtml(plugin('fixtures/posthtml.json')).process(await read('fixtures/input.html'))).html
+		(await read('test/expected/output-config-pkg.html')),
+		(await posthtml(plugin('test/fixtures/posthtml.json')).process(await read('test/fixtures/input.html'))).html
 	);
 });
 
 test('test witch posthtml-css-modules', async t => {
 	t.is(
-		(await read('expected/output-modules.html')),
-		(await posthtml(plugin('fixtures/modules.json', {'posthtml-css-modules': 'dist/css-modules.json', 'posthtml-each': {}})).process(await read('fixtures/input-modules.html'))).html
+		(await read('test/expected/output-modules.html')),
+		(await posthtml(plugin('test/fixtures/modules.json', {'posthtml-css-modules': 'test/dist/css-modules.json', 'posthtml-each': {}})).process(await read('test/fixtures/input-modules.html'))).html
 	);
 });
 
 test('should throw not install plugin posthtml-css', async t => {
 	t.is(
-		(await read('expected/output-config-pkg.html')),
-		(await posthtml(plugin('fixtures/posthtml.json', {css: {}, postcss: {}})).process(await read('fixtures/input.html'))).html
+		(await read('test/expected/output-config-pkg.html')),
+		(await posthtml(plugin('test/fixtures/posthtml.json', {css: {}, postcss: {}})).process(await read('test/fixtures/input.html'))).html
 	);
 });
