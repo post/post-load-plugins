@@ -51,7 +51,7 @@
     "indent-string": "^3.0.0",
     "log-symbols": "^1.0.2",
     "post-config": "0.0.2",
-    "post-sequence": "^0.1.0",
+    "post-sequence": "^0.1.8",
     "text-table": "^0.2.0"
   },
   "devDependencies": {
