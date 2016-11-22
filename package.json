@@ -55,7 +55,7 @@
     "text-table": "^0.2.0"
   },
   "devDependencies": {
-    "ava": "*",
+    "ava": "0.17.0",
     "ava-codemods": "^0.3.0",
     "babel-cli": "^6.11.4",
     "babel-eslint": "^7.0.0",
