@@ -142,7 +142,7 @@
       "modDlmtr": "-"
     },
     "styleToFile": {
-      "path": "./dist/styleToFile.css"
+      "path": "test/dist/styleToFile.css"
     }
   }
 }
