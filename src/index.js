@@ -6,6 +6,8 @@ import table from 'text-table';
 import indentString from 'indent-string';
 import postConfig from 'post-config';
 
+chalk.enabled = true;
+
 const toKebabCase = plugin => plugin.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
 const getModuleName = plugin => `posthtml-${toKebabCase(plugin)}`;
 
@@ -13,7 +15,7 @@ function processor(plugin, warning) {
 	try {
 		return require(getModuleName(plugin));
 	} catch (err) {
-		warning.push(Array.of(indentString(`${logSymbols.error}`, 4), `posthtml-${plugin}`));
+		warning.push(Array.of(indentString(`${chalk.red(logSymbols.error)}`, 4), `posthtml-${plugin}`));
 		return () => {};
 	}
 }
@@ -26,7 +28,7 @@ export default (cfg, extCfg) => {
 		.filter(plugin => plugin !== undefined);
 
 	if (warning.length > 0) {
-		console.log(indentString(`${logSymbols.warning} ${chalk.yellow('warning'.toUpperCase())} plugins is not installed`, 2));
+		console.log(indentString(`${chalk.yellow(logSymbols.warning)} ${chalk.yellow('warning'.toUpperCase())} plugins is not installed`, 2));
 		console.log(`${table(warning)}`);
 	}
 
