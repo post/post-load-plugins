@@ -92,8 +92,9 @@ postcss(postLoadPlugins()).process('.test { display: flex; color: #ff0000;} @cha
  ```
  *Will apply `autoprefixer` with option described in the configuration `"browsers": ["last 2 versions"]` and postcss-csso with default settings*
 
- --
- ### Nodejs with [PostHTML](https://github.com/posthtml/posthtml)
+--  
+### Nodejs with [PostHTML](https://github.com/posthtml/posthtml)
+ 
 package.json
 ```json
 "name": "my-post-project",
@@ -110,6 +111,7 @@ package.json
   }
 }
 ```
+
 index.js
 ```js
 import posthtml from 'posthtml';
