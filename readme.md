@@ -139,18 +139,36 @@ Default: `[]`
 Description: *Accepts an object with properties for the expansion*
 
 ```js
-postLoadPlugins({
+import posthtml from 'posthtml';
+import postLoadPlugins from 'post-load-plugins';
+
+const html = `
+  <div block="content">
+    <h1 elem="title">Title</h1>
+    <p elem="text" mods="red">Text</p>
+  </div>
+`;
+
+posthtml(postLoadPlugins({
   extends: {
     config: {
       posthtml: {
         bem: {
-          modDlmtr: '--'
+          "modPrefix": "---"
         }
       }
     }
   }
-})
+})).process(html);
+
+//  result =>
+//  <div class="content">
+//    <h1 class="content__title">Title</h1>
+//
+//    <p class="content__text content__text---red">Text</p>
+//  </div>
 ```
+*Expand the current configuration for posthtml plugins bem*
 
 ## LICENSE
 
