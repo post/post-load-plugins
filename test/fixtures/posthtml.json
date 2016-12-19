@@ -5,7 +5,7 @@
     "modDlmtr": "--"
   },
   "include": {
-    "root": "test/",
+    "root": "/",
     "encoding": "utf-8"
   },
   "styleToFile": {

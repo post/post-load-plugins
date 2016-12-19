@@ -17,7 +17,7 @@
   },
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
-    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog\"",
+    "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog v`npm view post-load-plugins version`\"",
     "patch": "np patch --any-branch",
     "minor": "np minor --any-branch",
     "major": "np major --any-branch",
@@ -51,11 +51,12 @@
     "chalk": "^1.1.3",
     "indent-string": "^3.0.0",
     "log-symbols": "^1.0.2",
-    "post-config": "0.0.3",
+    "post-config": "0.0.4-alpha",
     "post-sequence": "^0.1.9",
     "text-table": "^0.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^6.5.4",
     "ava": "*",
     "ava-codemods": "^0.3.0",
     "babel-cli": "^6.11.4",
@@ -79,6 +80,8 @@
     "husky": "^0.11.9",
     "np": "^2.11.0",
     "nyc": "^10.0.0",
+    "postcss": "^5.2.6",
+    "postcss-csso": "^1.1.2",
     "posthtml": "^0.9.1",
     "posthtml-bem": "^0.2.2",
     "posthtml-css-modules": "^0.1.0",
