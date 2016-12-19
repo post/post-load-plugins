@@ -154,7 +154,7 @@ posthtml(postLoadPlugins({
     config: {
       posthtml: {
         bem: {
-          "modPrefix": "---"
+          modPrefix: '---'
         }
       }
     }
