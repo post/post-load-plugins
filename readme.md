@@ -27,35 +27,35 @@ $ npm install post-load-plugins
 ## Usage
 
 1. Install processor [PostHTML](https://github.com/posthtml/posthtml) or [PostCSS](https://github.com/postcss/postcss) or both and post-load-plugins
-```bash
-$ npm install postcss posthtml post-load-plugins 
-```
+  ```bash
+  $ npm install postcss posthtml post-load-plugins 
+  ```
 
 2. Install plugins for your processor
-```bash
-$ npm install autoprefixer postcss-at-rules-variables postcss-csso posthtml-bem posthtml-beautify
-```
+  ```bash
+  $ npm install autoprefixer postcss-at-rules-variables postcss-csso posthtml-bem posthtml-beautify
+  ```
 
 3. Create configuration for plugins is different from the default in package.json. 
-```json
-"postcss":{
-  "plugins": {
-    "autoprefixer": {
-      "browsers": ["last 2 versions"]
-    },
-    "at-rules-variables": {
-      "atRule": ["@media"]
+  ```json
+  "postcss":{
+    "plugins": {
+      "autoprefixer": {
+        "browsers": ["last 2 versions"]
+      },
+      "at-rules-variables": {
+        "atRule": ["@media"]
+      }
+    }
+  },
+  "posthtml": {
+    "bem": {
+      "elemPrefix": "__",
+      "modPrefix": "--",
+      "modDlmtr": "-"
     }
   }
-},
-"posthtml": {
-  "bem": {
-    "elemPrefix": "__",
-    "modPrefix": "--",
-    "modDlmtr": "-"
-  }
-}
-```  
+  ```  
 
 > For plugins not having rules installed locally will be used default settings.
 
@@ -133,13 +133,20 @@ posthtml(postLoadPlugins()).process(html);
 //  </div>
  ```
 ## Options
-
-*Coming soon*:  
 #### `extends`  
 Type: `Array`  
 Default: `[]`  
-Description: *Accepts an object with properties for the expansion*
+Description: *May contain an `Object` with properties or `path` to config for the expansion*
 
+extend.config.json
+```json
+bem: {
+  modPrefix: '---'
+}
+```  
+*Will automatically try to determine if you do not specify a process name in the package name or the package does not reside in the property matching process*
+
+index.js
 ```js
 import posthtml from 'posthtml';
 import postLoadPlugins from 'post-load-plugins';
@@ -151,17 +158,7 @@ const html = `
   </div>
 `;
 
-posthtml(postLoadPlugins({
-  extends: {
-    config: {
-      posthtml: {
-        bem: {
-          modPrefix: '---'
-        }
-      }
-    }
-  }
-})).process(html);
+posthtml(postLoadPlugins({extends: ['path/to/file/extend.config.json']})).process(html);
 
 //  result =>
 //  <div class="content">
