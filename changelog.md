@@ -1,3 +1,19 @@
+<a name="0.0.5"></a>
+## 0.0.5 (2016-12-27)
+
+* 0.0.5 ([6c5f843](https://github.com/post-org/post-config/commit/6c5f843))
+* Update readme.md ([8c6b0a6](https://github.com/post-org/post-config/commit/8c6b0a6))
+* chore(changelog): Update changelog v0.0.4 ([abda1cc](https://github.com/post-org/post-config/commit/abda1cc))
+* chore(package): update devDep ([e27c1f9](https://github.com/post-org/post-config/commit/e27c1f9))
+* chore(package): update post-config ([cabcdbc](https://github.com/post-org/post-config/commit/cabcdbc))
+* chore(package): update post-config, fixed #26 ([fa7cfef](https://github.com/post-org/post-config/commit/fa7cfef)), closes [#26](https://github.com/post-org/post-config/issues/26)
+* chore(package): update postcss to version 5.2.8 ([c08ae36](https://github.com/post-org/post-config/commit/c08ae36))
+* fix(package): broken tests, close #29 ([03bf285](https://github.com/post-org/post-config/commit/03bf285)), closes [#29](https://github.com/post-org/post-config/issues/29)
+* docs(readme): add extends description, fix #28 ([3338a97](https://github.com/post-org/post-config/commit/3338a97)), closes [#28](https://github.com/post-org/post-config/issues/28)
+* docs(readme): add optionsal for three step point ([60f8b25](https://github.com/post-org/post-config/commit/60f8b25))
+
+
+
 <a name="0.0.4"></a>
 ## 0.0.4 (2016-12-19)
 
@@ -6,15 +22,16 @@
 * docs(readme): fix typo ([d68f83c](https://github.com/post-org/post-config/commit/d68f83c))
 * refactor(*): adds support processor postcss and posthtml ([117553f](https://github.com/post-org/post-config/commit/117553f))
 * refactor(index): add colors for pretty reporting ([3d1cd46](https://github.com/post-org/post-config/commit/3d1cd46))
-* test(*): move config from package to test folder, fixed #4 ([502223d](https://github.com/post-org/post-config/commit/502223d)), closes [#4](https://github.com/post-org/post-config/issues/4)
-* test(package): add testen ([debc152](https://github.com/post-org/post-config/commit/debc152))
 * chore(changelog): Update changelog ([764ca3a](https://github.com/post-org/post-config/commit/764ca3a))
 * chore(package): change preset-es2015 to preset-env, fixed #17 ([590c239](https://github.com/post-org/post-config/commit/590c239)), closes [#17](https://github.com/post-org/post-config/issues/17)
 * chore(package): update babel-preset-babili to version 0.0.9 ([44ffab5](https://github.com/post-org/post-config/commit/44ffab5))
 * chore(package): update devDep ([991ba9d](https://github.com/post-org/post-config/commit/991ba9d))
+* chore(package): update eslint to version 3.12.1 ([636725c](https://github.com/post-org/post-config/commit/636725c))
 * chore(package): update np to version 2.11.0 ([99fb3a4](https://github.com/post-org/post-config/commit/99fb3a4))
 * chore(package): update nyc to version 10.0.0 ([56df6bb](https://github.com/post-org/post-config/commit/56df6bb))
 * chore(package): update post-sequence to version 0.1.9 ([0239b03](https://github.com/post-org/post-config/commit/0239b03))
+* test(*): move config from package to test folder, fixed #4 ([502223d](https://github.com/post-org/post-config/commit/502223d)), closes [#4](https://github.com/post-org/post-config/issues/4)
+* test(package): add testen ([debc152](https://github.com/post-org/post-config/commit/debc152))
 
 
 
