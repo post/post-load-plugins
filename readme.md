@@ -36,7 +36,9 @@ $ npm install post-load-plugins
   $ npm install autoprefixer postcss-at-rules-variables postcss-csso posthtml-bem posthtml-beautify
   ```
 
-3. Create configuration for plugins is different from the default in package.json. 
+3. **`Optional`** Create configuration for plugins is different from the default in package.json.  
+  > For plugins not having configuration installed locally will be used default settings.  
+
   ```json
   "postcss":{
     "plugins": {
@@ -56,8 +58,6 @@ $ npm install post-load-plugins
     }
   }
   ```  
-
-> For plugins not having rules installed locally will be used default settings.
 
 > Attention, it is recommended to use notation as above for postcss `postcss: { plugins: { ... } }`, but both types are supported notation `posthtml: { bem: { ... }, plugins: { beautify: { ... } } }`. 
 
