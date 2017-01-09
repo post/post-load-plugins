@@ -139,8 +139,8 @@ Description: *May contain an `Object` with properties or `path` to config for th
 
 extend.config.json
 ```json
-bem: {
-  modPrefix: '---'
+"bem": {
+  "modPrefix": "---"
 }
 ```  
 *Will automatically try to determine if you do not specify a process name in the package name or the package does not reside in the property matching process*
