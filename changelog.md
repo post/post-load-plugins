@@ -1,3 +1,20 @@
+<a name="0.0.6"></a>
+## 0.0.6 (2017-01-09)
+
+* 0.0.6 ([d02865e](https://github.com/post-org/post-config/commit/d02865e))
+* style(index): remove inline rules dynamic import for eslint ([04c5499](https://github.com/post-org/post-config/commit/04c5499))
+* perf(*): use to-case module, close #35 ([303f19c](https://github.com/post-org/post-config/commit/303f19c)), closes [#35](https://github.com/post-org/post-config/issues/35)
+* docs(*): change report image, close #23 ([3d6bf21](https://github.com/post-org/post-config/commit/3d6bf21)), closes [#23](https://github.com/post-org/post-config/issues/23)
+* docs(readme): fix jsno notattion, close #31 ([f522b9f](https://github.com/post-org/post-config/commit/f522b9f)), closes [#31](https://github.com/post-org/post-config/issues/31)
+* chore(changelog): Update changelog v0.0.5 ([d1064c7](https://github.com/post-org/post-config/commit/d1064c7))
+* chore(package): update babel-preset-env to version 1.1.6 ([c291f8a](https://github.com/post-org/post-config/commit/c291f8a))
+* chore(package): update clinton to version 0.10.0 ([7ef181c](https://github.com/post-org/post-config/commit/7ef181c))
+* chore(package): update eslint to version 3.13.0 ([0628257](https://github.com/post-org/post-config/commit/0628257))
+* chore(package): update post-sequence to version 0.1.10 ([fb9ac67](https://github.com/post-org/post-config/commit/fb9ac67))
+* chore(package): update postcss to version 5.2.9 ([aa8a01e](https://github.com/post-org/post-config/commit/aa8a01e))
+
+
+
 <a name="0.0.5"></a>
 ## 0.0.5 (2016-12-27)
 

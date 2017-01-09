@@ -13,7 +13,7 @@ Automatically detects the running environment on the basis of which creates the 
 [post-sequence](https://github.com/GitScrum/post-sequence) - Generates the correct sequence of execution of plug-ins for the executable
 
 Will inform you if the plugin has not been installed  
-![](https://raw.githubusercontent.com/posthtml/posthtml-load-plugins/master/reporting.jpg)
+![](reporting.jpg)
 
 ## Install
 
@@ -21,8 +21,7 @@ Will inform you if the plugin has not been installed
 $ npm install post-load-plugins 
 ```
 > **Note:** This project is compatible with node v4+
-
-*And install your processor ([PostHTML](https://github.com/posthtml/posthtml) or [PostCSS](https://github.com/postcss/postcss) or both)*  
+ 
 
 ## Usage
 
@@ -140,8 +139,8 @@ Description: *May contain an `Object` with properties or `path` to config for th
 
 extend.config.json
 ```json
-bem: {
-  modPrefix: '---'
+"bem": {
+  "modPrefix": "---"
 }
 ```  
 *Will automatically try to determine if you do not specify a process name in the package name or the package does not reside in the property matching process*

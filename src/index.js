@@ -1,4 +1,3 @@
-/* eslint import/no-dynamic-require: 0 */
 import postSequence from 'post-sequence';
 import postProcessor from './post-processor';
 import postConfig from 'post-config';
@@ -6,15 +5,13 @@ import logSymbols from 'log-symbols';
 import chalk from 'chalk';
 import table from 'text-table';
 import indentString from 'indent-string';
+import toSlugCase from 'to-slug-case';
 
 chalk.enabled = true;
 
-const toKebabCase = plugin => plugin.replace(/[A-Z]/g, match => `-${match.toLowerCase()}`);
-const getModuleName = plugin => `${toKebabCase(plugin)}`;
-
 const loadPlugin = (plugin, warning) => {
 	try {
-		return require(getModuleName(plugin));
+		return require(toSlugCase(plugin));
 	} catch (err) {
 		warning.push(Array.of(indentString(`${chalk.red(logSymbols.error)}`, 4), plugin));
 		return () => {};
