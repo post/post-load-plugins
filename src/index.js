@@ -1,4 +1,3 @@
-/* eslint import/no-dynamic-require: 0 */
 import postSequence from 'post-sequence';
 import postProcessor from './post-processor';
 import postConfig from 'post-config';
