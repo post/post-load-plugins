@@ -53,7 +53,8 @@
     "log-symbols": "^1.0.2",
     "post-config": "0.0.4-alpha.2",
     "post-sequence": "^0.1.10",
-    "text-table": "^0.2.0"
+    "text-table": "^0.2.0",
+    "to-slug-case": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.6.0",
