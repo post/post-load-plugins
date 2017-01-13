@@ -18,7 +18,7 @@ const read = path => new Promise((resolve, reject) => {
 	});
 });
 
-test('post-load-pliguns return array', t => {
+test('post-load-pliguns return function', t => {
 	t.true(typeof postLoadPlugins() === 'function');
 });
 
