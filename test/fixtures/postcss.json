@@ -1,0 +1,6 @@
+{
+    "use": ["autoprefixer", "postcss-csso"],
+    "autoprefixer": {
+      "browsers": "last 2 versions"
+    }
+}

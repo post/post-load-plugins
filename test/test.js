@@ -1,7 +1,9 @@
 import path from 'path';
-import {readFile} from 'fs';
+import {readFile, existsSync} from 'fs';
 import posthtml from 'posthtml';
 import postcss from 'postcss';
+import execa from 'execa';
+import tempfile from 'tempfile';
 import test from 'ava';
 import postLoadPlugins from '../src/index.js';
 
@@ -17,15 +19,8 @@ const read = path => new Promise((resolve, reject) => {
 });
 
 test('post-load-pliguns return array', t => {
-	t.true(Array.isArray(postLoadPlugins()));
+	t.true(typeof postLoadPlugins() === 'function');
 });
-
-/* test('post-load-pliguns return default config', async t => {
-	t.is(
-		[],
-		await postLoadPlugins()
-	);
-}); */
 
 test('post-load-pliguns default config for posthtml from package.json', async t => {
 	t.is(
@@ -41,25 +36,12 @@ test('post-load-pliguns default config for postcss from package.json', async t =
 	);
 });
 
-/* test('Plugin reads custom json config from posthtml.json', async t => {
-	t.is(
-		(await read('expected/output-config-pkg.html')),
-		(await posthtml(postLoadPlugins('fixtures/posthtml.json')).process(await read('fixtures/input.html'))).html
-	);
+test('post-load-pliguns default config for postcss-cli from package.json', async t => {
+	t.plan(2);
+	const filename = tempfile('.css');
+	await execa('postcss', ['-u', path.resolve('../lib/index.js'), '-o', filename, 'fixtures/input-for-cli.css']);
+	const fix = await read('expected/output-for-cli.css');
+	const exp = await read(filename);
+	t.true(existsSync(filename));
+	t.is(fix, exp);
 });
-
-test('should throw not install plugin posthtml-css', async t => {
-	t.is(
-		(await read('expected/output-config-pkg.html')),
-		(await posthtml(postLoadPlugins('fixtures/posthtml.json', {css: {}, postcss: {}})).process(await read('fixtures/input.html'))).html
-	);
-}); */
-
-/* test('test witch posthtml-css-modules', async t => {
-	t.is(
-		(await read('expected/output-modules.html')),
-		(await posthtml(postLoadPlugins('fixtures/modules.json', {'posthtml-css-modules': 'dist/css-modules.json', 'posthtml-each': {}})).process(await read('fixtures/input-modules.html'))).html
-	);
-});
-
-*/

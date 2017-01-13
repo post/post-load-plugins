@@ -78,10 +78,12 @@
     "eslint-plugin-markdown": "^1.0.0-beta.2",
     "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-xo": "^1.0.0",
+    "execa": "^0.6.0",
     "husky": "^0.12.0",
     "np": "^2.12.0",
     "nyc": "^10.0.0",
     "postcss": "^5.2.9",
+    "postcss-cli": "^2.6.0",
     "postcss-csso": "^1.1.2",
     "posthtml": "^0.9.1",
     "posthtml-bem": "^0.2.2",
@@ -91,8 +93,19 @@
     "posthtml-modules": "^0.4.0",
     "posthtml-standard-config": "0.0.5",
     "posthtml-style-to-file": "^0.1.1",
+    "tempfile": "^1.1.1",
     "testen": "^1.8.2",
     "updtr": "^0.2.1"
+  },
+  "postcss":{
+    "plugins": {
+      "autoprefixer": {
+        "browsers": ["last 2 versions"]
+      },
+      "at-rules-variables": {
+        "atRule": ["@media"]
+      }
+    }
   },
   "ava": {
     "require": [
