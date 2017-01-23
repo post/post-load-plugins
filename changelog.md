@@ -1,3 +1,33 @@
+<a name="0.0.7"></a>
+## 0.0.7 (2017-01-23)
+
+* 0.0.7 ([87b6483](https://github.com/post-org/post-config/commit/87b6483))
+* style(package): auto sorting pkg ([c294294](https://github.com/post-org/post-config/commit/c294294))
+* chore(changelog): Update changelog v`npm view post-load-plugins version` ([71b44ef](https://github.com/post-org/post-config/commit/71b44ef))
+* chore(package): update autoprefixer to version 6.7.0 ([251cd21](https://github.com/post-org/post-config/commit/251cd21))
+* chore(package): update babel-cli to version 6.22.2 ([8b8fcfb](https://github.com/post-org/post-config/commit/8b8fcfb))
+* chore(package): update babel-preset-babili to version 0.0.10 ([de857f3](https://github.com/post-org/post-config/commit/de857f3))
+* chore(package): update babel-preset-env to version 1.1.8 ([0b18bb6](https://github.com/post-org/post-config/commit/0b18bb6))
+* chore(package): update babel-register to version 6.22.0 ([326040c](https://github.com/post-org/post-config/commit/326040c))
+* chore(package): update clinton to version 0.11.0 ([94f6c11](https://github.com/post-org/post-config/commit/94f6c11))
+* chore(package): update depDev ([fc595d6](https://github.com/post-org/post-config/commit/fc595d6))
+* chore(package): update depDev ([ad8baba](https://github.com/post-org/post-config/commit/ad8baba))
+* chore(package): update eslint to version 3.13.1 ([01a6ce8](https://github.com/post-org/post-config/commit/01a6ce8))
+* chore(package): update eslint to version 3.14.0 ([6287268](https://github.com/post-org/post-config/commit/6287268))
+* chore(package): update eslint-plugin-ava to version 4.0.1 ([377b36c](https://github.com/post-org/post-config/commit/377b36c))
+* chore(package): update eslint-plugin-babel to version 4.0.1 ([ef8c930](https://github.com/post-org/post-config/commit/ef8c930))
+* chore(package): update husky to version 0.13.0 ([9928f18](https://github.com/post-org/post-config/commit/9928f18))
+* chore(package): update nyc to version 10.1.2 ([25a8d2a](https://github.com/post-org/post-config/commit/25a8d2a))
+* chore(package): update postcss to version 5.2.10 ([fc77d91](https://github.com/post-org/post-config/commit/fc77d91))
+* chore(package): update postcss to version 5.2.11 ([8da09bb](https://github.com/post-org/post-config/commit/8da09bb))
+* chore(package): update posthtml to version 0.9.2 ([1e8e2ad](https://github.com/post-org/post-config/commit/1e8e2ad))
+* test(*): add test for #47 ([7be3120](https://github.com/post-org/post-config/commit/7be3120))
+* test(test): change name test to return funtion ([fcaf8ec](https://github.com/post-org/post-config/commit/fcaf8ec))
+* refactor(index): incorrect work with cli, close #47 ([f38071b](https://github.com/post-org/post-config/commit/f38071b)), closes [#47](https://github.com/post-org/post-config/issues/47)
+* fix(package): target must be number, close #49 ([0b8b619](https://github.com/post-org/post-config/commit/0b8b619)), closes [#49](https://github.com/post-org/post-config/issues/49)
+
+
+
 <a name="0.0.6"></a>
 ## 0.0.6 (2017-01-09)
 

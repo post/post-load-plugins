@@ -21,7 +21,7 @@ const loadPlugin = (plugin, warning) => {
 export default (...options) => {
 	let warning = [];
 
-	return [(ctx, res) => {
+	return (ctx, res) => {
 		const processor = postProcessor(ctx);
 		const config = postSequence(postConfig(...options)[processor.name].plugins, {processor: processor.name, namespace: true});
 		const plugins = Object.keys(config)
@@ -35,5 +35,5 @@ export default (...options) => {
 		}
 
 		return plugins.forEach(plugin => plugin(ctx, typeof res === 'function' ? res() : res));
-	}];
+	};
 };

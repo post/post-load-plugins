@@ -1,6 +1,6 @@
 {
   "name": "post-load-plugins",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
   "repository": "post-org/post-config",
@@ -51,39 +51,41 @@
     "chalk": "^1.1.3",
     "indent-string": "^3.0.0",
     "log-symbols": "^1.0.2",
-    "post-config": "0.0.4-alpha.2",
+    "post-config": "0.0.4-alpha.4",
     "post-sequence": "^0.1.10",
     "text-table": "^0.2.0",
     "to-slug-case": "^1.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.6.0",
+    "autoprefixer": "^6.7.0",
     "ava": "*",
     "ava-codemods": "^0.3.0",
-    "babel-cli": "^6.11.4",
+    "babel-cli": "^6.22.2",
     "babel-eslint": "^7.1.1",
     "babel-plugin-add-module-exports": "^0.2.0",
-    "babel-preset-babili": "0.0.9",
-    "babel-preset-env": "^1.1.6",
-    "babel-register": "^6.16.0",
-    "clinton": "^0.10.0",
+    "babel-preset-babili": "0.0.10",
+    "babel-preset-env": "^1.1.8",
+    "babel-register": "^6.22.0",
+    "clinton": "^0.11.0",
     "conventional-changelog-cli": "^1.2.0",
     "conventional-changelog-lint": "^1.0.0",
     "coveralls": "^2.11.14",
-    "eslint": "^3.13.0",
+    "eslint": "^3.14.0",
     "eslint-config-xo": "^0.17.0",
     "eslint-formatter-pretty": "^1.1.0",
-    "eslint-plugin-ava": "^4.0.0",
-    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-ava": "^4.0.1",
+    "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-markdown": "^1.0.0-beta.2",
     "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-xo": "^1.0.0",
-    "husky": "^0.12.0",
+    "execa": "^0.6.0",
+    "husky": "^0.13.0",
     "np": "^2.12.0",
-    "nyc": "^10.0.0",
-    "postcss": "^5.2.9",
+    "nyc": "^10.1.2",
+    "postcss": "^5.2.11",
+    "postcss-cli": "^2.6.0",
     "postcss-csso": "^1.1.2",
-    "posthtml": "^0.9.1",
+    "posthtml": "^0.9.2",
     "posthtml-bem": "^0.2.2",
     "posthtml-css-modules": "^0.1.0",
     "posthtml-each": "^1.0.1",
@@ -91,8 +93,23 @@
     "posthtml-modules": "^0.4.0",
     "posthtml-standard-config": "0.0.5",
     "posthtml-style-to-file": "^0.1.1",
+    "tempfile": "^1.1.1",
     "testen": "^1.8.2",
     "updtr": "^0.2.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      },
+      "at-rules-variables": {
+        "atRule": [
+          "@media"
+        ]
+      }
+    }
   },
   "ava": {
     "require": [
@@ -105,7 +122,7 @@
         "env",
         {
           "targets": {
-            "node": "4"
+            "node": 4
           }
         }
       ],
