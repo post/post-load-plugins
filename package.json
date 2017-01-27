@@ -3,9 +3,9 @@
   "version": "0.0.7",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
-  "repository": "post-org/post-config",
-  "homepage": "post-org/post-config#readme",
-  "bugs": "post-org/post-config/issues",
+  "repository": "post-org/post-load-plugins",
+  "homepage": "post-org/post-load-plugins#readme",
+  "bugs": "post-org/post-load-plugins/issues",
   "author": {
     "name": "Ivan Demidov",
     "email": "Scrum@list.ru",
