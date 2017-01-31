@@ -57,7 +57,7 @@
     "to-slug-case": "^1.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.7.1",
+    "autoprefixer": "^6.7.2",
     "ava": "*",
     "ava-codemods": "^0.3.1",
     "babel-cli": "^6.22.2",
