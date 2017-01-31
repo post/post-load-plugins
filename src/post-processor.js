@@ -1,3 +1,5 @@
+import 'babel-polyfill';
+
 export default ctx => ({
-	name: ctx.type === 'root' ? 'postcss' : 'posthtml'
+	name: Reflect.has(ctx, 'processor') && Reflect.has(ctx.processor, 'name') ? ctx.processor.name : 'postcss'
 });
