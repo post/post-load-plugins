@@ -59,7 +59,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.1",
     "ava": "*",
-    "ava-codemods": "^0.3.0",
+    "ava-codemods": "^0.3.1",
     "babel-cli": "^6.22.2",
     "babel-eslint": "^7.1.1",
     "babel-plugin-add-module-exports": "^0.2.0",
