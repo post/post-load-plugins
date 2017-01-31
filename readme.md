@@ -89,7 +89,7 @@ import postLoadPlugins from 'post-load-plugins';
 postcss(postLoadPlugins()).process('.test { display: flex; color: #ff0000;} @charset "utf-8";');
 // result => .test{display:-ms-flexbox;display:flex;color:red}
  ```
- *Will apply `autoprefixer` with option described in the configuration `"browsers": ["last 2 versions"]` and postcss-csso with default settings*
+ *Will apply `autoprefixer` with option described in the configuration `"browsers": ["last 2 versions"]` and `postcss-csso` with default settings*
 
 --  
 ### Nodejs with [PostHTML](https://github.com/posthtml/posthtml)
@@ -131,6 +131,9 @@ posthtml(postLoadPlugins()).process(html);
 //    <p class="content__text content__text--red">Text</p>
 //  </div>
  ```
+
+*Will apply `posthtml-bem` with option described in the configuration `"elemPrefix": "__","modPrefix": "--","modDlmtr": "-"` and `posthtml-beautify` with default settings*  
+
 ## Options
 #### `extends`  
 Type: `Array`  
