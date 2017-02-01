@@ -1,3 +1,13 @@
+<a name="0.0.9"></a>
+## 0.0.9 (2017-02-01)
+
+* 0.0.9 ([f42b49e](https://github.com/post-org/post-load-plugins/commit/f42b49e))
+* fix(package): babel-polyfill must be in dep, close #77 ([7d4c497](https://github.com/post-org/post-load-plugins/commit/7d4c497)), closes [#77](https://github.com/post-org/post-load-plugins/issues/77)
+* chore(changelog): Update changelog v0.0.8 ([ac380e1](https://github.com/post-org/post-load-plugins/commit/ac380e1))
+* chore(package): update autoprefixer to version 6.7.2 ([7371672](https://github.com/post-org/post-load-plugins/commit/7371672))
+
+
+
 <a name="0.0.8"></a>
 ## 0.0.8 (2017-01-31)
 
