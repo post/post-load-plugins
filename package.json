@@ -1,6 +1,6 @@
 {
   "name": "post-load-plugins",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
   "repository": "post-org/post-load-plugins",
@@ -54,16 +54,16 @@
     "post-config": "0.0.4-alpha.5",
     "post-sequence": "^0.1.10",
     "text-table": "^0.2.0",
+    "babel-polyfill": "^6.22.0",
     "to-slug-case": "^1.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.7.1",
+    "autoprefixer": "^6.7.2",
     "ava": "*",
     "ava-codemods": "^0.3.1",
     "babel-cli": "^6.22.2",
     "babel-eslint": "^7.1.1",
     "babel-plugin-add-module-exports": "^0.2.0",
-    "babel-polyfill": "^6.22.0",
     "babel-preset-babili": "0.0.10",
     "babel-preset-env": "^1.1.8",
     "babel-register": "^6.22.0",
