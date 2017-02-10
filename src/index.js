@@ -34,6 +34,8 @@ export default (...options) => {
 			console.log('\n');
 		}
 
-		return plugins.forEach(plugin => plugin(ctx, typeof res === 'function' ? res() : res));
+		plugins.forEach(plugin => plugin(ctx, typeof res === 'function' ? res() : res));
+
+		return ctx;
 	};
 };
