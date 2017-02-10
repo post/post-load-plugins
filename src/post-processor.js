@@ -14,11 +14,9 @@ const findProcessorName = args => {
 		name = 'reshape';
 	}
 
-	return name;
+	return name.toLowerCase();
 };
 
-export default (...ctx) => {
-	return {
-		name: findProcessorName(ctx)
-	};
-};
+export default (...ctx) => ({
+	name: findProcessorName(ctx)
+});
