@@ -22,7 +22,7 @@ export default (...options) => {
 	let warning = [];
 
 	return (ctx, res) => {
-		const processor = postProcessor(ctx);
+		const processor = postProcessor(ctx, res);
 		const config = postSequence(postConfig(...options)[processor.name].plugins, {processor: processor.name, namespace: true});
 		const plugins = Object.keys(config)
 			.map(plugin => loadPlugin(plugin, warning, processor)(config[plugin]))
