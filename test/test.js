@@ -2,6 +2,7 @@ import path from 'path';
 import {readFile, existsSync} from 'fs';
 import posthtml from 'posthtml';
 import postcss from 'postcss';
+import reshape from 'reshape';
 import execa from 'execa';
 import tempfile from 'tempfile';
 import test from 'ava';
@@ -44,4 +45,32 @@ test('post-load-pliguns default config for postcss-cli from package.json', async
 	const exp = await read(filename);
 	t.true(existsSync(filename));
 	t.is(fix, exp);
+});
+
+test('reshape with post-load-pliguns should return equal html', async t => {
+	const html = '<div class="test">test</div>';
+	t.is(html, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
+});
+
+test('reshape with post-load-pliguns should report not install pkg', async t => {
+	const html = '<my-custom class="test">test</my-custom>';
+	const ext = {
+		reshape: {
+			plugins: {
+				'custom-elements': {
+					defaultTag: 'span'
+				}
+			}
+		}
+	};
+	t.is(html, (await reshape({plugins: [postLoadPlugins(ext)]}).process(html)).output());
+});
+
+test('reshape with post-load-pliguns with reshape-beautify plugin', async t => {
+	const html = `<body><p>hi there</p><div class='wow'>this is minified</div></body>`;
+	const fixtures = `<body>
+  <p>hi there</p>
+  <div class="wow">this is minified</div>
+</body>`;
+	t.is(fixtures, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
 });
