@@ -3,9 +3,11 @@ environment:
     - nodejs_version: "7"
     - nodejs_version: "6"
     - nodejs_version: "5"
-      environment: TEST_PATH=test/test.js test/test-post*.js
+      before_test:
+        - cmd: set TEST_PATH=test/test.js test/test-post*.js
     - nodejs_version: "4"
-      environment: TEST_PATH=test/test.js test/test-post*.js
+      before_test:
+        - cmd: set TEST_PATH=test/test.js test/test-post*.js
 
 version: "{build}"
 build: off
