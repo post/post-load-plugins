@@ -1,3 +1,41 @@
+<a name="0.0.10"></a>
+## 0.0.10 (2017-02-14)
+
+* 0.0.10 ([6a1fc9d](https://github.com/post-org/post-load-plugins/commit/6a1fc9d))
+* Update readme.md ([e364ed9](https://github.com/post-org/post-load-plugins/commit/e364ed9))
+* ci(*): off travis lint ([22a1959](https://github.com/post-org/post-load-plugins/commit/22a1959))
+* ci(appveyor): fix env ([46002eb](https://github.com/post-org/post-load-plugins/commit/46002eb))
+* ci(appveyor): try again fix env ([de90998](https://github.com/post-org/post-load-plugins/commit/de90998))
+* ci(appveyor): try again fix env ([87679b3](https://github.com/post-org/post-load-plugins/commit/87679b3))
+* ci(appveyor): try fix ([380f304](https://github.com/post-org/post-load-plugins/commit/380f304))
+* ci(appveyor): try fix cmd env ([f566785](https://github.com/post-org/post-load-plugins/commit/f566785))
+* ci(appveyor): try fix env ([ff8e323](https://github.com/post-org/post-load-plugins/commit/ff8e323))
+* ci(travis): fix env path ([05c844e](https://github.com/post-org/post-load-plugins/commit/05c844e))
+* ci(travis): fix incorrect env ([2a14789](https://github.com/post-org/post-load-plugins/commit/2a14789))
+* ci(travis): try fix env path ([ab36c09](https://github.com/post-org/post-load-plugins/commit/ab36c09))
+* ci(travis): try fix test for reshape ([f00e591](https://github.com/post-org/post-load-plugins/commit/f00e591))
+* docs(readme): add support processor information ([1c60d92](https://github.com/post-org/post-load-plugins/commit/1c60d92))
+* test(*): add test for reshape, close #48 ([7223c38](https://github.com/post-org/post-load-plugins/commit/7223c38)), closes [#48](https://github.com/post-org/post-load-plugins/issues/48)
+* test(*): devided tests ([667cd8d](https://github.com/post-org/post-load-plugins/commit/667cd8d))
+* test(package): add reshape for test ([ee0d1bf](https://github.com/post-org/post-load-plugins/commit/ee0d1bf))
+* test(reshape): remove double report ([edd3f14](https://github.com/post-org/post-load-plugins/commit/edd3f14))
+* perf(*): update detect, add reshape ([1ab4d4b](https://github.com/post-org/post-load-plugins/commit/1ab4d4b))
+* perf(index): by default need returns ctx ([e3e9186](https://github.com/post-org/post-load-plugins/commit/e3e9186))
+* perf(index): set red color for processor ([24c26f5](https://github.com/post-org/post-load-plugins/commit/24c26f5))
+* perf(post-processor): return lowercase name processor ([00d18a8](https://github.com/post-org/post-load-plugins/commit/00d18a8))
+* perf(post-processor): update detect ([8ccdfbf](https://github.com/post-org/post-load-plugins/commit/8ccdfbf))
+* chore(changelog): Update changelog v0.0.9 ([aac87fb](https://github.com/post-org/post-load-plugins/commit/aac87fb))
+* chore(package): add core-js ([1387421](https://github.com/post-org/post-load-plugins/commit/1387421))
+* chore(package): update ava to version 0.18.1 ([d80877e](https://github.com/post-org/post-load-plugins/commit/d80877e))
+* chore(package): update babel-preset-babili to version 0.0.11 ([b4e8188](https://github.com/post-org/post-load-plugins/commit/b4e8188))
+* chore(package): update babel-register to version 6.23.0 ([9b43c22](https://github.com/post-org/post-load-plugins/commit/9b43c22))
+* chore(package): update depDev ([490082b](https://github.com/post-org/post-load-plugins/commit/490082b))
+* chore(package): update eslint to version 3.15.0 ([b584029](https://github.com/post-org/post-load-plugins/commit/b584029))
+* chore(package): update postcss to version 5.2.12 ([e797392](https://github.com/post-org/post-load-plugins/commit/e797392))
+* chore(package): update postcss to version 5.2.13 ([7b79f40](https://github.com/post-org/post-load-plugins/commit/7b79f40))
+
+
+
 <a name="0.0.9"></a>
 ## 0.0.9 (2017-02-01)
 
