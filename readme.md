@@ -1,5 +1,5 @@
 # post-load-plugins
-> Automatically detects process ([PostCSS](https://github.com/postcss/postcss) or [PostHTML](https://github.com/posthtml/posthtml)) creates a configuration and loads the plugins.
+> Automatically detects processor and creates a configuration for used the plugins.
 
 [![Travis Build Status](https://img.shields.io/travis/post-org/post-load-plugins/master.svg?style=flat-square&label=unix)](https://travis-ci.org/post-org/post-load-plugins)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/post-load-plugins.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/post-load-plugins)[![testen badge](https://img.shields.io/badge/testen-passing-brightgreen.svg?style=flat-square)](https://github.com/egoist/testen)[![node](https://img.shields.io/node/v/post-load-plugins.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/post-load-plugins.svg?style=flat-square)](https://www.npmjs.com/package/post-load-plugins)[![Dependency Status](https://david-dm.org/post-org/post-load-plugins.svg?style=flat-square)](https://david-dm.org/post-org/post-load-plugins)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/post-org/post-load-plugins.svg?style=flat-square)](https://coveralls.io/r/post-org/post-load-plugins)
 
@@ -8,11 +8,16 @@
 ## Why?
 Automatically detects the running environment on the basis of which creates the configuration for plugins using [post-config](https://github.com/post-org/post-config) used in the process and sorts the execution order of plugins using [post-sequence](https://github.com/GitScrum/post-sequence).
 
-[post-config](https://github.com/post-org/post-config) - Automatically detect all plugins installed and create a configuration for them from the description in package.json used in the process.
+[**post-config**](https://github.com/post-org/post-config) - Automatically detect all plugins installed and create a configuration for them from the description in package.json used in the process.
 
-[post-sequence](https://github.com/GitScrum/post-sequence) - Generates the correct sequence of execution of plug-ins for the executable
+[**post-sequence**](https://github.com/GitScrum/post-sequence) - Generates the correct sequence of execution of plug-ins for the executable  
 
-Will inform you if the plugin has not been installed  
+**At the moment the tested processors:**
+
+|<a href="https://github.com/posthtml/posthtml"><img valign="top" height="49" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg"></a>|<a href="https://github.com/reshape/reshape"><img  valign="top" height="49" title="Reshape" src="http://files.jenius.im/_/NpnfqKD.png"></a>|<a href="https://github.com/postcss/postcss"><img valign="top" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>|
+|-|-|-|
+
+**Will inform you if the plugin has not been installed:**  
 ![](reporting.jpg)
 
 ## Install
