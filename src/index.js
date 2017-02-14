@@ -22,18 +22,20 @@ export default (...options) => {
 	let warning = [];
 
 	return (ctx, res) => {
-		const processor = postProcessor(ctx);
+		const processor = postProcessor(ctx, res);
 		const config = postSequence(postConfig(...options)[processor.name].plugins, {processor: processor.name, namespace: true});
 		const plugins = Object.keys(config)
 			.map(plugin => loadPlugin(plugin, warning, processor)(config[plugin]))
 			.filter(plugin => plugin !== undefined);
 
 		if (warning.length > 0) {
-			console.log(indentString(`${chalk.yellow(logSymbols.warning)} ${chalk.yellow('warning'.toUpperCase())} plugins for ${processor.name === 'postcss' ? chalk.red(processor.name) : chalk.yellow(processor.name)} is not installed`, 2));
+			console.log(indentString(`${chalk.yellow(logSymbols.warning)} ${chalk.yellow('warning'.toUpperCase())} plugins for ${chalk.red(processor.name)} is not installed`, 2));
 			console.log(`${table(warning)}`);
 			console.log('\n');
 		}
 
-		return plugins.forEach(plugin => plugin(ctx, typeof res === 'function' ? res() : res));
+		plugins.forEach(plugin => plugin(ctx, typeof res === 'function' ? res() : res));
+
+		return ctx;
 	};
 };
