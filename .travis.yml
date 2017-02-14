@@ -3,15 +3,13 @@ language: node_js
 node_js:
   - 7
   - 6
-  - 5
-  - 4
 
 matrix:
   include:
     - node_js: 5
-      env: TEST_PATH=test/test.js test/test-p*.js
+      env: TEST_PATH="test/test.js test/test-p*.js"
     - node_js: 4
-      env: TEST_PATH=test/test.js test/test-p*.js
+      env: TEST_PATH="test/test.js test/test-p*.js"
 
 after_success:
   - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
