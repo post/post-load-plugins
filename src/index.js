@@ -29,7 +29,7 @@ export default (...options) => {
 			.filter(plugin => plugin !== undefined);
 
 		if (warning.length > 0) {
-			console.log(indentString(`${chalk.yellow(logSymbols.warning)} ${chalk.yellow('warning'.toUpperCase())} plugins for ${processor.name === 'postcss' ? chalk.red(processor.name) : chalk.yellow(processor.name)} is not installed`, 2));
+			console.log(indentString(`${chalk.yellow(logSymbols.warning)} ${chalk.yellow('warning'.toUpperCase())} plugins for ${chalk.red(processor.name)} is not installed`, 2));
 			console.log(`${table(warning)}`);
 			console.log('\n');
 		}
