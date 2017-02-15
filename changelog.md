@@ -1,3 +1,12 @@
+<a name="0.0.12"></a>
+## 0.0.12 (2017-02-15)
+
+* 0.0.12 ([5977fa3](https://github.com/post-org/post-load-plugins/commit/5977fa3))
+* chore(changelog): Update changelog v0.0.11 ([6e14cc7](https://github.com/post-org/post-load-plugins/commit/6e14cc7))
+* chore(package): fix lost post-config, close #91 ([8ac500a](https://github.com/post-org/post-load-plugins/commit/8ac500a)), closes [#91](https://github.com/post-org/post-load-plugins/issues/91)
+
+
+
 <a name="0.0.11"></a>
 ## 0.0.11 (2017-02-15)
 
