@@ -69,7 +69,7 @@ $ npm install post-load-plugins
 
 
 ## Example
-### Nodejs with [PostCSS](https://github.com/postcss/postcss)
+### using [PostCSS](https://github.com/postcss/postcss)
 package.json
 ```json
 "name": "my-post-project",
@@ -97,7 +97,8 @@ postcss(postLoadPlugins()).process('.test { display: flex; color: #ff0000;} @cha
  *Will apply `autoprefixer` with option described in the configuration `"browsers": ["last 2 versions"]` and `postcss-csso` with default settings*
 
 --  
-### Nodejs with [PostHTML](https://github.com/posthtml/posthtml)
+
+### using [PostHTML](https://github.com/posthtml/posthtml)
  
 package.json
 ```json
