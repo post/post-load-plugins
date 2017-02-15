@@ -1,3 +1,14 @@
+<a name="0.0.11"></a>
+## 0.0.11 (2017-02-15)
+
+* 0.0.11 ([1f1dfe4](https://github.com/post-org/post-load-plugins/commit/1f1dfe4))
+* docs(readme): fix break line ([14f713b](https://github.com/post-org/post-load-plugins/commit/14f713b))
+* docs(readme): fix table ([7a6fef2](https://github.com/post-org/post-load-plugins/commit/7a6fef2))
+* chore(changelog): Update changelog v0.0.10 ([a9b15e8](https://github.com/post-org/post-load-plugins/commit/a9b15e8))
+* chore(package): update dep ([b84207f](https://github.com/post-org/post-load-plugins/commit/b84207f))
+
+
+
 <a name="0.0.10"></a>
 ## 0.0.10 (2017-02-14)
 
