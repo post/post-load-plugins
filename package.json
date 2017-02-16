@@ -1,6 +1,6 @@
 {
   "name": "post-load-plugins",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
   "repository": "post-org/post-load-plugins",
@@ -58,7 +58,7 @@
     "to-slug-case": "^1.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.7.2",
+    "autoprefixer": "^6.7.3",
     "ava": "*",
     "ava-codemods": "^0.3.1",
     "babel-cli": "^6.22.2",

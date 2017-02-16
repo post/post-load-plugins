@@ -10,25 +10,20 @@ test('reshape with post-load-pliguns should return equal html', async t => {
 	t.is(html, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
 });
 
-test('reshape with post-load-pliguns with reshape-beautify plugin', async t => {
-	const html = `<body><p>hi there</p><div class='wow'>this is minified</div></body>`;
-	const fixtures = `<body>
-  <p>hi there</p>
-  <div class="wow">this is minified</div>
-</body>`;
-	t.is(fixtures, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
+test('reshape with post-load-pliguns with reshape-custom-elements plugin', async t => {
+	const html = '<span class="test">test</span>';
+	t.is(html, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
 });
 
 test('reshape with post-load-pliguns should report not install pkg', async t => {
-	const html = '<my-custom class="test">test</my-custom>';
+	const html = `<body><p>hi there</p><div class='wow'>this is minified</div></body>`;
+	const fixtures = `<body><p>hi there</p><div class="wow">this is minified</div></body>`;
 	const ext = {
 		reshape: {
 			plugins: {
-				'custom-elements': {
-					defaultTag: 'span'
-				}
+				beautify: {}
 			}
 		}
 	};
-	t.is(html, (await reshape({plugins: [postLoadPlugins(ext)]}).process(html)).output());
+	t.is(fixtures, (await reshape({plugins: [postLoadPlugins(ext)]}).process(html)).output());
 });

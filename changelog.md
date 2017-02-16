@@ -1,3 +1,14 @@
+<a name="0.0.13"></a>
+## 0.0.13 (2017-02-16)
+
+* 0.0.13 ([2a3d191](https://github.com/post-org/post-load-plugins/commit/2a3d191))
+* fix(index): not return ctx in postcss plg, close #94 ([ea802be](https://github.com/post-org/post-load-plugins/commit/ea802be)), closes [#94](https://github.com/post-org/post-load-plugins/issues/94)
+* test(*): update tests ([574c923](https://github.com/post-org/post-load-plugins/commit/574c923))
+* chore(changelog): Update changelog v0.0.12 ([ae191fe](https://github.com/post-org/post-load-plugins/commit/ae191fe))
+* chore(package): update autoprefixer to version 6.7.3 ([bac3609](https://github.com/post-org/post-load-plugins/commit/bac3609))
+
+
+
 <a name="0.0.12"></a>
 ## 0.0.12 (2017-02-15)
 

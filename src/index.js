@@ -34,8 +34,10 @@ export default (...options) => {
 			console.log('\n');
 		}
 
-		plugins.forEach(plugin => plugin(ctx, typeof res === 'function' ? res() : res));
+		return plugins.reduce((ctx, plugin) => {
+			ctx = plugin(ctx, typeof res === 'function' ? res() : res) || ctx;
 
-		return ctx;
+			return ctx;
+		}, ctx);
 	};
 };
