@@ -97,7 +97,7 @@
     "reshape": "^0.4.1",
     "reshape-beautify": "^0.1.2",
     "tempfile": "^1.1.1",
-    "testen": "^1.8.2",
+    "testen": "^2.1.0",
     "updtr": "^0.2.1"
   },
   "postcss": {
