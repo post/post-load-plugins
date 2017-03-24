@@ -80,7 +80,7 @@
     "eslint-plugin-require-path-exists": "^1.1.5",
     "eslint-plugin-xo": "^1.0.0",
     "execa": "^0.6.0",
-    "husky": "^0.13.1",
+    "husky": "^0.13.3",
     "np": "^2.12.0",
     "nyc": "^10.1.2",
     "postcss": "^5.2.13",
