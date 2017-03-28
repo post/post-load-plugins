@@ -96,7 +96,7 @@
     "posthtml-style-to-file": "^0.1.1",
     "reshape": "^0.4.1",
     "reshape-beautify": "^0.1.2",
-    "tempfile": "^1.1.1",
+    "tempfile": "^2.0.0",
     "testen": "^2.1.0",
     "updtr": "^0.2.1"
   },
