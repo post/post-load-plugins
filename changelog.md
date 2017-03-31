@@ -1,3 +1,42 @@
+<a name="0.0.14"></a>
+## 0.0.14 (2017-03-31)
+
+* 0.0.14 ([a5c189f](https://github.com/post-org/post-load-plugins/commit/a5c189f))
+* Update license ([5bee998](https://github.com/post-org/post-load-plugins/commit/5bee998))
+* test(test-postcss): off source map ([7fb5aaa](https://github.com/post-org/post-load-plugins/commit/7fb5aaa))
+* test(tet-reshape): formatted fixtures ([f02a61d](https://github.com/post-org/post-load-plugins/commit/f02a61d))
+* style(post-processor): capitalized comments ([2704091](https://github.com/post-org/post-load-plugins/commit/2704091))
+* style(readme): capitalized comments ([a489538](https://github.com/post-org/post-load-plugins/commit/a489538))
+* chore(changelog): Update changelog v0.0.13 ([8987401](https://github.com/post-org/post-load-plugins/commit/8987401))
+* chore(package): merging ([f522bcd](https://github.com/post-org/post-load-plugins/commit/f522bcd))
+* chore(package): update autoprefixer to version 6.7.7 ([04c5925](https://github.com/post-org/post-load-plugins/commit/04c5925))
+* chore(package): update ava-codemods to version 0.3.2 ([f6d849b](https://github.com/post-org/post-load-plugins/commit/f6d849b))
+* chore(package): update babel-eslint to version 7.2.1 ([8f908a2](https://github.com/post-org/post-load-plugins/commit/8f908a2))
+* chore(package): update babel-preset-babili to version 0.0.12 ([eb7cf7e](https://github.com/post-org/post-load-plugins/commit/eb7cf7e))
+* chore(package): update babel-preset-env to version 1.3.2 ([16fe87f](https://github.com/post-org/post-load-plugins/commit/16fe87f))
+* chore(package): update babel-register to version 6.24.0 ([be1f9d5](https://github.com/post-org/post-load-plugins/commit/be1f9d5))
+* chore(package): update conventional-changelog-cli to version 1.3.0 ([627b2b1](https://github.com/post-org/post-load-plugins/commit/627b2b1))
+* chore(package): update conventional-changelog-lint to version 1.1.8 ([26769e2](https://github.com/post-org/post-load-plugins/commit/26769e2))
+* chore(package): update coveralls to version 2.13.0 ([080cd18](https://github.com/post-org/post-load-plugins/commit/080cd18))
+* chore(package): update eslint to version 3.18.0 ([f772a15](https://github.com/post-org/post-load-plugins/commit/f772a15))
+* chore(package): update eslint-config-xo to version 0.18.1 ([0db62d5](https://github.com/post-org/post-load-plugins/commit/0db62d5)), closes [#103](https://github.com/post-org/post-load-plugins/issues/103)
+* chore(package): update eslint-plugin-babel to version 4.1.1 ([a0dff5c](https://github.com/post-org/post-load-plugins/commit/a0dff5c))
+* chore(package): update eslint-plugin-markdown to version 1.0.0-beta.4 ([73ad4c2](https://github.com/post-org/post-load-plugins/commit/73ad4c2))
+* chore(package): update execa to version 0.6.3 ([12030bb](https://github.com/post-org/post-load-plugins/commit/12030bb))
+* chore(package): update husky to version 0.13.3 ([1037bb2](https://github.com/post-org/post-load-plugins/commit/1037bb2))
+* chore(package): update np to version 2.13.1 ([e2ec393](https://github.com/post-org/post-load-plugins/commit/e2ec393))
+* chore(package): update nyc to version 10.2.0 ([50b63a2](https://github.com/post-org/post-load-plugins/commit/50b63a2))
+* chore(package): update post-sequence to version 0.1.11 ([23aa8ad](https://github.com/post-org/post-load-plugins/commit/23aa8ad))
+* chore(package): update postcss to version 5.2.16 ([af0f471](https://github.com/post-org/post-load-plugins/commit/af0f471))
+* chore(package): update postcss-cli to version 3.0.0 ([7663beb](https://github.com/post-org/post-load-plugins/commit/7663beb))
+* chore(package): update postcss-csso to version 2.0.0 ([8a71eff](https://github.com/post-org/post-load-plugins/commit/8a71eff))
+* chore(package): update posthtml-css-modules to version 0.1.2 ([75de199](https://github.com/post-org/post-load-plugins/commit/75de199))
+* chore(package): update tempfile to version 2.0.0 ([339e6f1](https://github.com/post-org/post-load-plugins/commit/339e6f1))
+* chore(package): update testen to version 2.1.0 ([54c1a2b](https://github.com/post-org/post-load-plugins/commit/54c1a2b))
+* docs(readme): add Greenkeeper badge  ([1d9d471](https://github.com/post-org/post-load-plugins/commit/1d9d471))
+
+
+
 <a name="0.0.13"></a>
 ## 0.0.13 (2017-02-16)
 
