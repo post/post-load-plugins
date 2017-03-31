@@ -94,7 +94,7 @@ import postcss from 'postcss';
 import postLoadPlugins from 'post-load-plugins';
 
 postcss(postLoadPlugins()).process('.test { display: flex; color: #ff0000;} @charset "utf-8";');
-// result => .test{display:-ms-flexbox;display:flex;color:red}
+// Result => .test{display:-ms-flexbox;display:flex;color:red}
  ```
  *Will apply `autoprefixer` with option described in the configuration `"browsers": ["last 2 versions"]` and `postcss-csso` with default settings*
 
@@ -132,7 +132,7 @@ const html = `
 `;
 
 posthtml(postLoadPlugins()).process(html);
-//  result =>
+//  Result =>
 //  <div class="content">
 //    <h1 class="content__title">Title</h1>
 //
@@ -170,7 +170,7 @@ const html = `
 
 posthtml(postLoadPlugins({extends: ['path/to/file/extend.config.json']})).process(html);
 
-//  result =>
+//  Result =>
 //  <div class="content">
 //    <h1 class="content__title">Title</h1>
 //
