@@ -17,7 +17,11 @@ test('reshape with post-load-pliguns with reshape-custom-elements plugin', async
 
 test('reshape with post-load-pliguns should report not install pkg', async t => {
 	const html = `<body><p>hi there</p><div class='wow'>this is minified</div></body>`;
-	const fixtures = `<body><p>hi there</p><div class="wow">this is minified</div></body>`;
+	const fixtures = `<body>
+  <p>hi there</p>
+  <div class="wow">this is minified</div>
+</body>
+`;
 	const ext = {
 		reshape: {
 			plugins: {
