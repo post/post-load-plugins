@@ -1,3 +1,17 @@
+<a name="0.0.15"></a>
+## 0.0.15 (2017-04-03)
+
+* 0.0.15 ([78bbd08](https://github.com/post-org/post-load-plugins/commit/78bbd08))
+* chore(changelog): Update changelog v`npm view post-load-plugins version` ([ea6639d](https://github.com/post-org/post-load-plugins/commit/ea6639d))
+* chore(package): update clean and postpublish ([10b4a86](https://github.com/post-org/post-load-plugins/commit/10b4a86))
+* chore(package): update eslint to version 3.19.0 ([941aa35](https://github.com/post-org/post-load-plugins/commit/941aa35))
+* chore(package): update post-sequence to version 0.1.12 ([ae7bba6](https://github.com/post-org/post-load-plugins/commit/ae7bba6))
+* chore(package): update updtr to version 1.0.0 ([a8ef39a](https://github.com/post-org/post-load-plugins/commit/a8ef39a))
+* chore(yarn.lock): add yarn ([e697125](https://github.com/post-org/post-load-plugins/commit/e697125))
+* fix(package): update post-config to version 0.0.4-alpha.10 ([3293a28](https://github.com/post-org/post-load-plugins/commit/3293a28))
+
+
+
 <a name="0.0.14"></a>
 ## 0.0.14 (2017-03-31)
 
