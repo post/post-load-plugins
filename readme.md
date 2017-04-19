@@ -1,6 +1,5 @@
 # post-load-plugins
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/post-org/post-load-plugins.svg)](https://greenkeeper.io/)
 > Automatically detects processor and creates a configuration for used the plugins.
 
 [![Travis Build Status](https://img.shields.io/travis/post-org/post-load-plugins/master.svg?style=flat-square&label=unix)](https://travis-ci.org/post-org/post-load-plugins)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/post-load-plugins/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/post-load-plugins)[![testen badge](https://img.shields.io/badge/testen-passing-brightgreen.svg?style=flat-square)](https://github.com/egoist/testen)[![node](https://img.shields.io/node/v/post-load-plugins.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/post-load-plugins.svg?style=flat-square)](https://www.npmjs.com/package/post-load-plugins)[![Dependency Status](https://david-dm.org/post-org/post-load-plugins.svg?style=flat-square)](https://david-dm.org/post-org/post-load-plugins)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/post-org/post-load-plugins.svg?style=flat-square)](https://coveralls.io/r/post-org/post-load-plugins)
