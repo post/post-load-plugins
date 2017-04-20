@@ -1,3 +1,21 @@
+<a name="0.0.16"></a>
+## 0.0.16 (2017-04-20)
+
+* 0.0.16 ([0123e57](https://github.com/post-org/post-load-plugins/commit/0123e57))
+* chore: update ([25e4a5a](https://github.com/post-org/post-load-plugins/commit/25e4a5a))
+* chore: update ([a971c29](https://github.com/post-org/post-load-plugins/commit/a971c29))
+* chore: yarn ([2d5c164](https://github.com/post-org/post-load-plugins/commit/2d5c164))
+* chore(changelog): Update changelog ([4f845de](https://github.com/post-org/post-load-plugins/commit/4f845de))
+* chore(package): update ava to version 0.19.1 ([0dd7bb1](https://github.com/post-org/post-load-plugins/commit/0dd7bb1))
+* chore(package): update babel-cli to version 6.24.1 ([043e9ae](https://github.com/post-org/post-load-plugins/commit/043e9ae))
+* chore(package): update babel-eslint to version 7.2.2 ([a6b63aa](https://github.com/post-org/post-load-plugins/commit/a6b63aa))
+* chore(package): update babel-preset-env to version 1.4.0 ([12bee16](https://github.com/post-org/post-load-plugins/commit/12bee16))
+* chore(package): update clinton to version 0.12.0 ([331c867](https://github.com/post-org/post-load-plugins/commit/331c867))
+* chore(package): update postcss to version 5.2.17 ([2ffcc64](https://github.com/post-org/post-load-plugins/commit/2ffcc64))
+* style: fix lint ([244ce85](https://github.com/post-org/post-load-plugins/commit/244ce85))
+
+
+
 <a name="0.0.15"></a>
 ## 0.0.15 (2017-04-03)
 
