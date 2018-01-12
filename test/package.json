@@ -65,22 +65,6 @@
       "add-module-exports"
     ]
   },
-  "eslintConfig": {
-    "format": "node_modules/eslint-formatter-pretty",
-    "parser": "babel-eslint",
-    "plugins": [
-      "ava",
-      "xo",
-      "babel",
-      "require-path-exists",
-      "markdown"
-    ],
-    "extends": [
-      "xo",
-      "plugin:xo/recommended",
-      "plugin:ava/recommended"
-    ]
-  },
   "clinton": {
     "ignores": [
       "test/**",
