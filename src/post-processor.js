@@ -1,5 +1,3 @@
-import Reflect from 'core-js/library/es6/reflect';
-
 const findProcessorName = args => {
 	const ctx = args.find(ctx => Reflect.has(ctx, 'processor') && Reflect.has(ctx.processor, 'name'));
 	let name = ctx ? ctx.processor.name : undefined;
