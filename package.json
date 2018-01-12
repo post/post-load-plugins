@@ -16,13 +16,11 @@
     "node": ">=4"
   },
   "scripts": {
+    "precommit": "clinton && lint-staged",
     "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
     "build": "rimraf lib && babel src -d lib",
     "prepare": "npm run build",
-    "lintjs": "eslint ./src/*.js ./test/*.js",
-    "lintmd": "eslint --ext md --rule indent: [error, 4] .",
-    "pretest": "clinton && npm run lintjs && npm run lintmd",
     "test": "nyc ava"
   },
   "files": [
@@ -76,6 +74,7 @@
     "eslint-plugin-xo": "^1.0.0",
     "execa": "^0.7.0",
     "husky": "^0.13.3",
+    "lint-staged": "^6.0.0",
     "nyc": "^11.0.2",
     "postcss": "^6.0.1",
     "postcss-cli": "^4.1.0",
@@ -92,6 +91,10 @@
     "reshape-beautify": "^0.1.2",
     "rimraf": "^2.6.2",
     "tempfile": "^2.0.0"
+  },
+  "lint-staged": {
+    "{src,test}/**/*.{js}": "eslint",
+    "./*.md": "eslint --rule indent: [error, 4] ."
   },
   "postcss": {
     "plugins": {
