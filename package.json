@@ -18,9 +18,6 @@
   "scripts": {
     "commitmsg": "conventional-changelog-lint -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"chore(changelog): Update changelog\"",
-    "patch": "np patch --any-branch",
-    "minor": "np minor --any-branch",
-    "major": "np major --any-branch",
     "clean": "rm -rf lib",
     "build": "npm run clean && babel src -d lib",
     "prepublish": "npm run build",
@@ -79,7 +76,6 @@
     "eslint-plugin-xo": "^1.0.0",
     "execa": "^0.7.0",
     "husky": "^0.13.3",
-    "np": "^2.13.1",
     "nyc": "^11.0.2",
     "postcss": "^6.0.1",
     "postcss-cli": "^4.1.0",
