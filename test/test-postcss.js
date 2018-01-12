@@ -4,7 +4,8 @@ import postcss from 'postcss';
 import execa from 'execa';
 import tempfile from 'tempfile';
 import test from 'ava';
-import postLoadPlugins from 'src/index.js';
+/* eslint unicorn/import-index: off */
+import postLoadPlugins from '../src/index.js';
 
 process.chdir(path.resolve(process.cwd() + '/test'));
 
