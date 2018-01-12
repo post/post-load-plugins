@@ -27,8 +27,7 @@
     "lintjs": "eslint ./src/*.js ./test/*.js",
     "lintmd": "eslint --ext md --rule indent: [error, 4] .",
     "pretest": "clinton && npm run lintjs && npm run lintmd",
-    "test": "nyc ava",
-    "update": "updtr"
+    "test": "nyc ava"
   },
   "files": [
     "lib/"
@@ -95,9 +94,7 @@
     "posthtml-style-to-file": "^0.1.1",
     "reshape": "^0.4.1",
     "reshape-beautify": "^0.1.2",
-    "tempfile": "^2.0.0",
-    "testen": "^2.1.0",
-    "updtr": "^1.0.0"
+    "tempfile": "^2.0.0"
   },
   "postcss": {
     "plugins": {
