@@ -18,8 +18,7 @@
   "scripts": {
     "commitmsg": "commitlint --extends=@commitlint/config-angular -e",
     "postpublish": "conventional-changelog -i changelog.md -s -r 0 && git commit -am \"build: update changelog\"",
-    "clean": "rm -rf lib",
-    "build": "npm run clean && babel src -d lib",
+    "build": "rimraf lib && babel src -d lib",
     "prepublish": "npm run build",
     "lintjs": "eslint ./src/*.js ./test/*.js",
     "lintmd": "eslint --ext md --rule indent: [error, 4] .",
@@ -91,6 +90,7 @@
     "posthtml-style-to-file": "^0.1.1",
     "reshape": "^0.4.1",
     "reshape-beautify": "^0.1.2",
+    "rimraf": "^2.6.2",
     "tempfile": "^2.0.0"
   },
   "postcss": {
