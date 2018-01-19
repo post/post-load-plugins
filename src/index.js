@@ -1,4 +1,5 @@
 import path from 'path';
+import flatry from 'flatry';
 import postSequence from 'post-sequence';
 import postProcessor from './post-processor';
 import postConfig from 'post-config';
@@ -11,12 +12,14 @@ import toSlugCase from 'to-slug-case';
 chalk.enabled = true;
 
 const loadPlugin = (plugin, warning, pwd) => {
-	try {
-		return require(path.join(pwd, 'node_modules', toSlugCase(plugin)));
-	} catch (err) {
+	const [err, result] = flatry(() => require(path.join(pwd, 'node_modules', toSlugCase(plugin))));
+
+	if (err) {
 		warning.push(Array.of(indentString(`${chalk.red(logSymbols.error)}`, 4), plugin));
 		return () => {};
 	}
+
+	return result;
 };
 
 export default (...options) => {
