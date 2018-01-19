@@ -1,3 +1,15 @@
+<a name="0.0.18"></a>
+## 0.0.18 (2018-01-19)
+
+* 0.0.18 ([7fe35ea](https://github.com/post-org/post-load-plugins/commit/7fe35ea))
+* build: update changelog ([fe9b865](https://github.com/post-org/post-load-plugins/commit/fe9b865))
+* build: update depdev ([d5f1691](https://github.com/post-org/post-load-plugins/commit/d5f1691))
+* perf: us flatry, close #131 ([594ac8f](https://github.com/post-org/post-load-plugins/commit/594ac8f)), closes [#131](https://github.com/post-org/post-load-plugins/issues/131)
+* fix: resolve path for node modules ([2ff727f](https://github.com/post-org/post-load-plugins/commit/2ff727f))
+* test: correct test for correct resolve pwd ([a9db159](https://github.com/post-org/post-load-plugins/commit/a9db159))
+
+
+
 <a name="0.0.17"></a>
 ## 0.0.17 (2018-01-12)
 
