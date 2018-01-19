@@ -26,12 +26,12 @@ export default (...options) => {
 	let warning = [];
 
 	return (ctx, res) => {
-		const [{pwd}] = options.length ? options : [{pwd: process.cwd()}];
-		console.log(pwd);
+		const [{pwd}] = options;
+
 		const processor = postProcessor(ctx, res);
 		const config = postSequence(postConfig(...options)[processor.name].plugins, {processor: processor.name, namespace: true});
 		const plugins = Object.keys(config)
-			.map(plugin => loadPlugin(plugin, warning, pwd)(config[plugin]))
+			.map(plugin => loadPlugin(plugin, warning, pwd || process.pwd())(config[plugin]))
 			.filter(plugin => plugin !== undefined);
 
 		if (warning.length > 0) {

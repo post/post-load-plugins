@@ -1,3 +1,12 @@
+<a name="0.0.19"></a>
+## 0.0.19 (2018-01-19)
+
+* 0.0.19 ([6098e4d](https://github.com/post-org/post-load-plugins/commit/6098e4d))
+* fix: identification pwd ([7a01041](https://github.com/post-org/post-load-plugins/commit/7a01041))
+* build: update changelog ([2be6c08](https://github.com/post-org/post-load-plugins/commit/2be6c08))
+
+
+
 <a name="0.0.18"></a>
 ## 0.0.18 (2018-01-19)
 
