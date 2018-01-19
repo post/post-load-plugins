@@ -45,6 +45,7 @@
     "posthtml-each": "^1.0.1",
     "postcss-sorting": "1.7.0",
     "posthtml-beautify": "0.1.0",
+    "posthtml-w3c": "^0.8.1",
     "posthtml-include": "^1.1.0",
     "posthtml-modules": "^0.4.0",
     "posthtml-standard-config": "0.0.5",
