@@ -8,6 +8,7 @@ import test from 'ava';
 import postLoadPlugins from '../src/index.js';
 
 process.chdir(path.resolve(process.cwd() + '/test'));
+const pwd = path.resolve(process.cwd(), '..');
 
 const read = path => new Promise((resolve, reject) => {
 	readFile(path, 'utf8', (err, data) => {
@@ -21,7 +22,7 @@ const read = path => new Promise((resolve, reject) => {
 test('post-load-pliguns default config for postcss from package.json', async t => {
 	t.is(
 		'.test{display:-webkit-box;display:-ms-flexbox;display:flex;color:red}',
-		(await postcss(postLoadPlugins()).process('.test { display: flex; color: #ff0000;} @charset "utf-8";', {map: false})).css
+		(await postcss(postLoadPlugins({pwd})).process('.test { display: flex; color: #ff0000;} @charset "utf-8";', {map: false})).css
 	);
 });
 
@@ -29,8 +30,8 @@ test('post-load-pliguns default config for postcss from package.json', async t =
 test.skip('post-load-pliguns default config for postcss-cli from package.json', async t => {
 	t.plan(2);
 	const filename = tempfile('.css');
-	await execa('postcss', ['-u', path.resolve('../lib/index.js'), '-o', filename, 'fixtures/input-for-cli.css', '--no-map']);
-	const fix = await read('expected/output-for-cli.css');
+	await execa('postcss', ['-u', path.resolve('../lib/index.js'), '-o', filename, 'test/fixtures/input-for-cli.css', '--no-map']);
+	const fix = await read('test/expected/output-for-cli.css');
 	const exp = await read(filename);
 	t.true(existsSync(filename));
 	t.is(fix, exp);

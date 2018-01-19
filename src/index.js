@@ -1,3 +1,5 @@
+import path from 'path';
+import flatry from 'flatry';
 import postSequence from 'post-sequence';
 import postProcessor from './post-processor';
 import postConfig from 'post-config';
@@ -9,23 +11,27 @@ import toSlugCase from 'to-slug-case';
 
 chalk.enabled = true;
 
-const loadPlugin = (plugin, warning) => {
-	try {
-		return require(toSlugCase(plugin));
-	} catch (err) {
+const loadPlugin = (plugin, warning, pwd) => {
+	const [err, result] = flatry(() => require(path.join(pwd, 'node_modules', toSlugCase(plugin))));
+
+	if (err) {
 		warning.push(Array.of(indentString(`${chalk.red(logSymbols.error)}`, 4), plugin));
 		return () => {};
 	}
+
+	return result;
 };
 
 export default (...options) => {
 	let warning = [];
 
 	return (ctx, res) => {
+		const [{pwd}] = options.length ? options : [{pwd: process.cwd()}];
+		console.log(pwd);
 		const processor = postProcessor(ctx, res);
 		const config = postSequence(postConfig(...options)[processor.name].plugins, {processor: processor.name, namespace: true});
 		const plugins = Object.keys(config)
-			.map(plugin => loadPlugin(plugin, warning, processor)(config[plugin]))
+			.map(plugin => loadPlugin(plugin, warning, pwd)(config[plugin]))
 			.filter(plugin => plugin !== undefined);
 
 		if (warning.length > 0) {

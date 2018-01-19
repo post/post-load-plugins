@@ -1,18 +1,19 @@
 import path from 'path';
 import reshape from 'reshape';
 import test from 'ava';
-import postLoadPlugins from '../src/index.js';
+import postLoadPlugins from '../src';
 
 process.chdir(path.resolve(process.cwd() + '/test'));
+const pwd = path.resolve(process.cwd(), '..');
 
 test('reshape with post-load-pliguns should return equal html', async t => {
 	const html = '<div class="test">test</div>';
-	t.is(html, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
+	t.is(html, (await reshape({plugins: [postLoadPlugins({pwd})]}).process(html)).output());
 });
 
 test('reshape with post-load-pliguns with reshape-custom-elements plugin', async t => {
 	const html = '<span class="test">test</span>';
-	t.is(html, (await reshape({plugins: [postLoadPlugins()]}).process(html)).output());
+	t.is(html, (await reshape({plugins: [postLoadPlugins({pwd})]}).process(html)).output());
 });
 
 test('reshape with post-load-pliguns should report not install pkg', async t => {
@@ -27,7 +28,8 @@ test('reshape with post-load-pliguns should report not install pkg', async t => 
 			plugins: {
 				beautify: {}
 			}
-		}
+		},
+		pwd
 	};
 	t.is(fixtures, (await reshape({plugins: [postLoadPlugins(ext)]}).process(html)).output());
 });

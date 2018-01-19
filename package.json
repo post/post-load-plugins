@@ -1,6 +1,6 @@
 {
   "name": "post-load-plugins",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
   "repository": "post-org/post-load-plugins",
@@ -41,6 +41,7 @@
   ],
   "dependencies": {
     "chalk": "^2.3.0",
+    "flatry": "^1.0.8",
     "indent-string": "^3.1.0",
     "log-symbols": "^2.1.0",
     "post-config": "0.0.4-alpha.11",
