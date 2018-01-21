@@ -1,3 +1,13 @@
+<a name="0.0.21"></a>
+## 0.0.21 (2018-01-21)
+
+* 0.0.21 ([26ec024](https://github.com/post-org/post-load-plugins/commit/26ec024))
+* build: fix for node 4 ([8aadb03](https://github.com/post-org/post-load-plugins/commit/8aadb03))
+* build: update changelog ([e63ca28](https://github.com/post-org/post-load-plugins/commit/e63ca28))
+* build: update depDev ([f5273c2](https://github.com/post-org/post-load-plugins/commit/f5273c2))
+
+
+
 <a name="0.0.20"></a>
 ## 0.0.20 (2018-01-19)
 
