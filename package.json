@@ -1,6 +1,6 @@
 {
   "name": "post-load-plugins",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
   "repository": "post-org/post-load-plugins",
@@ -40,6 +40,7 @@
     "Autoload"
   ],
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "chalk": "^2.3.0",
     "flatry": "^1.0.8",
     "indent-string": "^3.1.0",
@@ -62,7 +63,6 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-minify": "^0.2.0",
     "babel-register": "^6.24.0",
-    "babel-runtime": "^6.26.0",
     "clinton": "^0.13.0",
     "conventional-changelog-cli": "^1.3.0",
     "coveralls": "^3.0.0",
