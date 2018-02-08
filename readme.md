@@ -19,7 +19,7 @@ Automatically detects the running environment on the basis of which creates the 
 ---|---|---|
 
 **Will inform you if the plugin has not been installed:**  
-![](reporting.jpg)
+![](reporting.png)
 
 ## Install
 
