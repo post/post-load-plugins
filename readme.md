@@ -15,7 +15,7 @@ Automatically detects the running environment on the basis of which creates the 
 
 **At the moment the tested processors:**
 
-<a href="https://github.com/posthtml/posthtml"><img valign="top" height="49" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg"></a>|<a href="https://github.com/reshape/reshape"><img  valign="top" height="49" title="Reshape" src="http://files.jenius.im/_/NpnfqKD.png"></a>|<a href="https://github.com/postcss/postcss"><img valign="top" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>|
+<a href="https://github.com/posthtml/posthtml"><img valign="top" height="49" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg"></a>|<a href="https://github.com/reshape/reshape"><img  valign="top" height="49" title="Reshape" src="https://avatars0.githubusercontent.com/u/20820714?s=200&v=4"></a>|<a href="https://github.com/postcss/postcss"><img valign="top" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>|
 ---|---|---|
 
 **Will inform you if the plugin has not been installed:**  
