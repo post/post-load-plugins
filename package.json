@@ -1,6 +1,6 @@
 {
   "name": "post-load-plugins",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Automatically loads plug-ins with configuration",
   "license": "MIT",
   "repository": "post-org/post-load-plugins",
