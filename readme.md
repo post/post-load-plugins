@@ -2,24 +2,24 @@
 
 > Automatically detects processor and creates a configuration for used the plugins.
 
-[![Travis Build Status](https://img.shields.io/travis/post-org/post-load-plugins/master.svg?style=flat-square&label=unix)](https://travis-ci.org/post-org/post-load-plugins)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/post-load-plugins/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/post-load-plugins)[![testen badge](https://img.shields.io/badge/testen-passing-brightgreen.svg?style=flat-square)](https://github.com/egoist/testen)[![node](https://img.shields.io/node/v/post-load-plugins.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/post-load-plugins.svg?style=flat-square)](https://www.npmjs.com/package/post-load-plugins)[![Dependency Status](https://david-dm.org/post-org/post-load-plugins.svg?style=flat-square)](https://david-dm.org/post-org/post-load-plugins)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/post-org/post-load-plugins.svg?style=flat-square)](https://coveralls.io/r/post-org/post-load-plugins)
+[![Travis Build Status](https://img.shields.io/travis/post/post-load-plugins/master.svg?style=flat-square&label=unix)](https://travis-ci.org/post/post-load-plugins)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/post-load-plugins/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/post-load-plugins)[![node](https://img.shields.io/node/v/post-load-plugins.svg?maxAge=2592000&style=flat-square)]()[![npm version](https://img.shields.io/npm/v/post-load-plugins.svg?style=flat-square)](https://www.npmjs.com/package/post-load-plugins)[![Dependency Status](https://david-dm.org/post/post-load-plugins.svg?style=flat-square)](https://david-dm.org/post/post-load-plugins)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/sindresorhus/xo)[![Coveralls status](https://img.shields.io/coveralls/post/post-load-plugins.svg?style=flat-square)](https://coveralls.io/r/post/post-load-plugins)
 
 [![npm downloads](https://img.shields.io/npm/dm/post-load-plugins.svg?style=flat-square)](https://www.npmjs.com/package/post-load-plugins)[![npm](https://img.shields.io/npm/dt/post-load-plugins.svg?style=flat-square)](https://www.npmjs.com/package/post-load-plugins)[![Package Quality](http://npm.packagequality.com/shield/post-load-plugins.svg?style=flat-square)](http://packagequality.com/#?package=post-load-plugins)
 
 ## Why?
-Automatically detects the running environment on the basis of which creates the configuration for plugins using [post-config](https://github.com/post-org/post-config) used in the process and sorts the execution order of plugins using [post-sequence](https://github.com/GitScrum/post-sequence).
+Automatically detects the running environment on the basis of which creates the configuration for plugins using [post-config](https://github.com/post/post-config) used in the process and sorts the execution order of plugins using [post-sequence](https://github.com/GitScrum/post-sequence).
 
-[**post-config**](https://github.com/post-org/post-config) - Automatically detect all plugins installed and create a configuration for them from the description in package.json used in the process.
+[**post-config**](https://github.com/post/post-config) - Automatically detect all plugins installed and create a configuration for them from the description in package.json used in the process.
 
 [**post-sequence**](https://github.com/GitScrum/post-sequence) - Generates the correct sequence of execution of plug-ins for the executable  
 
 **At the moment the tested processors:**
 
-<a href="https://github.com/posthtml/posthtml"><img valign="top" height="49" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg"></a>|<a href="https://github.com/reshape/reshape"><img  valign="top" height="49" title="Reshape" src="http://files.jenius.im/_/NpnfqKD.png"></a>|<a href="https://github.com/postcss/postcss"><img valign="top" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>|
+<a href="https://github.com/posthtml/posthtml"><img valign="top" height="49" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg"></a>|<a href="https://github.com/reshape/reshape"><img  valign="top" height="49" title="Reshape" src="https://avatars0.githubusercontent.com/u/20820714?s=200&v=4"></a>|<a href="https://github.com/postcss/postcss"><img valign="top" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>|
 ---|---|---|
 
 **Will inform you if the plugin has not been installed:**  
-![](reporting.jpg)
+![](reporting.png)
 
 ## Install
 
@@ -177,27 +177,3 @@ posthtml(postLoadPlugins({extends: ['path/to/file/extend.config.json']})).proces
 //  </div>
 ```
 *Expand the current configuration for posthtml plugins bem*
-
-## LICENSE
-
-> MIT License (MIT)
-
->Copyright (c) Ivan Demidov <scrum@list.ru>
-
-> Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-> The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
