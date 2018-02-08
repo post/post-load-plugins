@@ -1,5 +1,27 @@
+<a name="0.0.22"></a>
+## <small>0.0.22 (2018-02-08)</small>
+
+* 0.0.22 ([014bbf4](https://github.com/post-org/post-load-plugins/commit/014bbf4))
+* docs: change path reshape logo ([166995a](https://github.com/post-org/post-load-plugins/commit/166995a))
+* docs: fix path org name ([7a15d63](https://github.com/post-org/post-load-plugins/commit/7a15d63))
+* docs: remove license, close #138 ([4299d87](https://github.com/post-org/post-load-plugins/commit/4299d87)), closes [#138](https://github.com/post-org/post-load-plugins/issues/138)
+* docs: remove testen badge ([e37cd71](https://github.com/post-org/post-load-plugins/commit/e37cd71))
+* docs: update screenshot ([ec31564](https://github.com/post-org/post-load-plugins/commit/ec31564))
+* fix: typo ([2af4186](https://github.com/post-org/post-load-plugins/commit/2af4186))
+* style: rename to test-* ([50425b8](https://github.com/post-org/post-load-plugins/commit/50425b8))
+* perf: throw error if witchout argumens or processor ([dbf1162](https://github.com/post-org/post-load-plugins/commit/dbf1162))
+* test: fix because beautify not works ([1c76902](https://github.com/post-org/post-load-plugins/commit/1c76902))
+* test: for post processor ([1c50342](https://github.com/post-org/post-load-plugins/commit/1c50342))
+* refactor: detect process name ([17b7866](https://github.com/post-org/post-load-plugins/commit/17b7866))
+* refactor: processing call plugins ([260750c](https://github.com/post-org/post-load-plugins/commit/260750c))
+* build: update changelog ([d19d001](https://github.com/post-org/post-load-plugins/commit/d19d001))
+* build: update depDev ([47184c1](https://github.com/post-org/post-load-plugins/commit/47184c1))
+* build: update reg for lint md files ([62f0d5e](https://github.com/post-org/post-load-plugins/commit/62f0d5e))
+
+
+
 <a name="0.0.21"></a>
-## 0.0.21 (2018-01-21)
+## <small>0.0.21 (2018-01-21)</small>
 
 * 0.0.21 ([26ec024](https://github.com/post-org/post-load-plugins/commit/26ec024))
 * build: fix for node 4 ([8aadb03](https://github.com/post-org/post-load-plugins/commit/8aadb03))
@@ -9,7 +31,7 @@
 
 
 <a name="0.0.20"></a>
-## 0.0.20 (2018-01-19)
+## <small>0.0.20 (2018-01-19)</small>
 
 * 0.0.20 ([f933a51](https://github.com/post-org/post-load-plugins/commit/f933a51))
 * fix: identification pwd ([b77f79a](https://github.com/post-org/post-load-plugins/commit/b77f79a))
@@ -18,7 +40,7 @@
 
 
 <a name="0.0.19"></a>
-## 0.0.19 (2018-01-19)
+## <small>0.0.19 (2018-01-19)</small>
 
 * 0.0.19 ([6098e4d](https://github.com/post-org/post-load-plugins/commit/6098e4d))
 * fix: identification pwd ([7a01041](https://github.com/post-org/post-load-plugins/commit/7a01041))
@@ -27,7 +49,7 @@
 
 
 <a name="0.0.18"></a>
-## 0.0.18 (2018-01-19)
+## <small>0.0.18 (2018-01-19)</small>
 
 * 0.0.18 ([7fe35ea](https://github.com/post-org/post-load-plugins/commit/7fe35ea))
 * build: update changelog ([fe9b865](https://github.com/post-org/post-load-plugins/commit/fe9b865))
@@ -39,7 +61,7 @@
 
 
 <a name="0.0.17"></a>
-## 0.0.17 (2018-01-12)
+## <small>0.0.17 (2018-01-12)</small>
 
 * 0.0.17 ([e98ea8f](https://github.com/post-org/post-load-plugins/commit/e98ea8f))
 * Update .travis.yml ([a284aef](https://github.com/post-org/post-load-plugins/commit/a284aef))
@@ -74,7 +96,7 @@
 
 
 <a name="0.0.16"></a>
-## 0.0.16 (2017-04-20)
+## <small>0.0.16 (2017-04-20)</small>
 
 * 0.0.16 ([0123e57](https://github.com/post-org/post-load-plugins/commit/0123e57))
 * Update readme.md ([89729c8](https://github.com/post-org/post-load-plugins/commit/89729c8))
@@ -93,7 +115,7 @@
 
 
 <a name="0.0.15"></a>
-## 0.0.15 (2017-04-03)
+## <small>0.0.15 (2017-04-03)</small>
 
 * 0.0.15 ([78bbd08](https://github.com/post-org/post-load-plugins/commit/78bbd08))
 * chore(changelog): Update changelog v`npm view post-load-plugins version` ([ea6639d](https://github.com/post-org/post-load-plugins/commit/ea6639d))
@@ -107,7 +129,7 @@
 
 
 <a name="0.0.14"></a>
-## 0.0.14 (2017-03-31)
+## <small>0.0.14 (2017-03-31)</small>
 
 * 0.0.14 ([a5c189f](https://github.com/post-org/post-load-plugins/commit/a5c189f))
 * Update license ([5bee998](https://github.com/post-org/post-load-plugins/commit/5bee998))
@@ -146,7 +168,7 @@
 
 
 <a name="0.0.13"></a>
-## 0.0.13 (2017-02-16)
+## <small>0.0.13 (2017-02-16)</small>
 
 * 0.0.13 ([2a3d191](https://github.com/post-org/post-load-plugins/commit/2a3d191))
 * fix(index): not return ctx in postcss plg, close #94 ([ea802be](https://github.com/post-org/post-load-plugins/commit/ea802be)), closes [#94](https://github.com/post-org/post-load-plugins/issues/94)
@@ -157,7 +179,7 @@
 
 
 <a name="0.0.12"></a>
-## 0.0.12 (2017-02-15)
+## <small>0.0.12 (2017-02-15)</small>
 
 * 0.0.12 ([5977fa3](https://github.com/post-org/post-load-plugins/commit/5977fa3))
 * chore(changelog): Update changelog v0.0.11 ([6e14cc7](https://github.com/post-org/post-load-plugins/commit/6e14cc7))
@@ -166,7 +188,7 @@
 
 
 <a name="0.0.11"></a>
-## 0.0.11 (2017-02-15)
+## <small>0.0.11 (2017-02-15)</small>
 
 * 0.0.11 ([1f1dfe4](https://github.com/post-org/post-load-plugins/commit/1f1dfe4))
 * docs(readme): fix break line ([14f713b](https://github.com/post-org/post-load-plugins/commit/14f713b))
@@ -177,7 +199,7 @@
 
 
 <a name="0.0.10"></a>
-## 0.0.10 (2017-02-14)
+## <small>0.0.10 (2017-02-14)</small>
 
 * 0.0.10 ([6a1fc9d](https://github.com/post-org/post-load-plugins/commit/6a1fc9d))
 * Update readme.md ([e364ed9](https://github.com/post-org/post-load-plugins/commit/e364ed9))
@@ -215,7 +237,7 @@
 
 
 <a name="0.0.9"></a>
-## 0.0.9 (2017-02-01)
+## <small>0.0.9 (2017-02-01)</small>
 
 * 0.0.9 ([f42b49e](https://github.com/post-org/post-load-plugins/commit/f42b49e))
 * fix(package): babel-polyfill must be in dep, close #77 ([7d4c497](https://github.com/post-org/post-load-plugins/commit/7d4c497)), closes [#77](https://github.com/post-org/post-load-plugins/issues/77)
@@ -225,7 +247,7 @@
 
 
 <a name="0.0.8"></a>
-## 0.0.8 (2017-01-31)
+## <small>0.0.8 (2017-01-31)</small>
 
 * 0.0.8 ([a382465](https://github.com/post-org/post-load-plugins/commit/a382465))
 * Fixed repo links ([3f0adaf](https://github.com/post-org/post-load-plugins/commit/3f0adaf))
@@ -243,7 +265,7 @@
 
 
 <a name="0.0.7"></a>
-## 0.0.7 (2017-01-23)
+## <small>0.0.7 (2017-01-23)</small>
 
 * 0.0.7 ([87b6483](https://github.com/post-org/post-load-plugins/commit/87b6483))
 * style(package): auto sorting pkg ([c294294](https://github.com/post-org/post-load-plugins/commit/c294294))
@@ -273,7 +295,7 @@
 
 
 <a name="0.0.6"></a>
-## 0.0.6 (2017-01-09)
+## <small>0.0.6 (2017-01-09)</small>
 
 * 0.0.6 ([d02865e](https://github.com/post-org/post-load-plugins/commit/d02865e))
 * style(index): remove inline rules dynamic import for eslint ([04c5499](https://github.com/post-org/post-load-plugins/commit/04c5499))
@@ -290,7 +312,7 @@
 
 
 <a name="0.0.5"></a>
-## 0.0.5 (2016-12-27)
+## <small>0.0.5 (2016-12-27)</small>
 
 * 0.0.5 ([6c5f843](https://github.com/post-org/post-load-plugins/commit/6c5f843))
 * Update readme.md ([8c6b0a6](https://github.com/post-org/post-load-plugins/commit/8c6b0a6))
@@ -306,7 +328,7 @@
 
 
 <a name="0.0.4"></a>
-## 0.0.4 (2016-12-19)
+## <small>0.0.4 (2016-12-19)</small>
 
 * 0.0.4 ([432cc4f](https://github.com/post-org/post-load-plugins/commit/432cc4f))
 * docs(readme): fix typo ([eaa084a](https://github.com/post-org/post-load-plugins/commit/eaa084a))
@@ -327,7 +349,7 @@
 
 
 <a name="0.0.3"></a>
-## 0.0.3 (2016-11-22)
+## <small>0.0.3 (2016-11-22)</small>
 
 * 0.0.3 ([0979e84](https://github.com/post-org/post-load-plugins/commit/0979e84))
 * Update readme.md ([1355777](https://github.com/post-org/post-load-plugins/commit/1355777))
@@ -347,7 +369,7 @@
 
 
 <a name="0.0.1"></a>
-## 0.0.1 (2016-11-16)
+## <small>0.0.1 (2016-11-16)</small>
 
 * 0.0.1 ([2c930cf](https://github.com/post-org/post-load-plugins/commit/2c930cf))
 * Initial commit ([c5bd46c](https://github.com/post-org/post-load-plugins/commit/c5bd46c))
