@@ -45,7 +45,7 @@ export default (...options) => {
 		}
 
 		if (!processor.plugins) {
-			plugins.forEach(plugin => tree = plugin(ctx))
+			plugins.forEach(plugin => ctx = plugin(ctx))
 		}
 
 		return typeof res === 'function' ? res(null, ctx) : ctx;
