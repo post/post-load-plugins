@@ -3,10 +3,14 @@ export default (...args) => {
 		throw new TypeError('post-processor did not receive any arguments.');
 	}
 
-	const ctx = args.find(ctx => Reflect.has(ctx, 'processor'));
+	let ctx = args.find(ctx => Reflect.has(ctx, 'processor')) || args.find(ctx => Reflect.has(ctx, 'name'));
 
 	if (!ctx) {
 		throw new TypeError('post-processor could not determine the process name.');
+	}
+
+	if (Reflect.has(ctx, 'name')) {
+		ctx = {processor: ctx};
 	}
 
 	const { processor: { name, plugins } } = ctx;
