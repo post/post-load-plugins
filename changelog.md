@@ -1,3 +1,14 @@
+<a name="0.0.23"></a>
+## <small>0.0.23 (2018-02-20)</small>
+
+* 0.0.23 ([0199710](https://github.com/post-org/post-load-plugins/commit/0199710))
+* fix: detect posthtml ([9251b0b](https://github.com/post-org/post-load-plugins/commit/9251b0b))
+* build: fix lint for md ([7cf9138](https://github.com/post-org/post-load-plugins/commit/7cf9138))
+* build: update changelog ([9933691](https://github.com/post-org/post-load-plugins/commit/9933691))
+* build: update depDev ([33efec5](https://github.com/post-org/post-load-plugins/commit/33efec5))
+
+
+
 <a name="0.0.22"></a>
 ## <small>0.0.22 (2018-02-08)</small>
 
