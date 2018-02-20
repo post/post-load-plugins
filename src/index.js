@@ -40,10 +40,14 @@ export default (...options) => {
 			console.log('\n');
 		}
 
-		return plugins.reduce((ctx, plugin) => {
-			ctx = plugin(ctx, typeof res === 'function' ? res() : res) || ctx;
+		if (processor.plugins) {
+			processor.plugins.push(...plugins);
+		}
 
-			return ctx;
-		}, ctx);
+		if (!processor.plugins) {
+			plugins.forEach(plugin => ctx = plugin(ctx))
+		}
+
+		return typeof res === 'function' ? res(null, ctx) : ctx;
 	};
 };

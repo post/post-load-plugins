@@ -1,20 +1,18 @@
-const findProcessorName = args => {
-	const ctx = args.find(ctx => Reflect.has(ctx, 'processor') && Reflect.has(ctx.processor, 'name'));
-	let name = ctx ? ctx.processor.name : undefined;
-
-	// Detect postcss
-	if (name === undefined && args[0].type === 'root' && Reflect.has(args[1], 'processor')) {
-		name = 'postcss';
+export default (...args) => {
+	if (args.length === 0) {
+		throw new TypeError('post-processor did not receive any arguments.');
 	}
 
-	// Detect reshape
-	if (name === undefined && Reflect.has(args[1], 'ReshapeError')) {
-		name = 'reshape';
+	const ctx = args.find(ctx => Reflect.has(ctx, 'processor'));
+
+	if (!ctx) {
+		throw new TypeError('post-processor could not determine the process name.');
 	}
 
-	return name.toLowerCase();
+	const { processor: { name, plugins } } = ctx;
+
+	return {
+		name: (name || 'postcss').toLowerCase(),
+		plugins
+	};
 };
-
-export default (...ctx) => ({
-	name: findProcessorName(ctx)
-});
