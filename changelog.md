@@ -1,3 +1,13 @@
+<a name="0.0.24"></a>
+## <small>0.0.24 (2018-03-02)</small>
+
+* 0.0.24 ([5f267b9](https://github.com/post-org/post-load-plugins/commit/5f267b9))
+* docs: change user name ([b2692f8](https://github.com/post-org/post-load-plugins/commit/b2692f8))
+* build: update changelog ([b6365ba](https://github.com/post-org/post-load-plugins/commit/b6365ba))
+* build: update depDev ([3155f87](https://github.com/post-org/post-load-plugins/commit/3155f87))
+
+
+
 <a name="0.0.23"></a>
 ## <small>0.0.23 (2018-02-20)</small>
 
